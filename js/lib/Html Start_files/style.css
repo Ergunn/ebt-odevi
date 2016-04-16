@@ -1,0 +1,233 @@
+/***
+->Html start, Ebt ödevi
+    -> Çocuklar için html
+->Grup Üyeleri : 
+    -> Ahmet Erşin
+    -> Hatice Ergün
+    -> Kerem Ermiş
+    -> Kusi Musah
+***/
+/***
+COLOR PALETTE
+
+#455A64 -> Değişik Koyu Mavi-yeşil
+#CFD8DC -> Açık arka plan mavi-yeşil
+#ECEFF1 -> Beyaza yakın gri
+
+***/
+/***Font İmport***/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*{
+    font-family: Roboto;
+}
+/***CSS Fixes***/
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+/***Public Class***/
+/***    Color Classes***/
+.bg-lightblue{
+    background-color: #455A64;
+}
+.bg-body{
+    background-color: #ECEFF1;
+}
+h1{
+    color:#546E7A;
+}
+/***    Shadow Classes***/
+.shadow-light{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.shadow-side{
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+}
+/***    Position Classes***/
+.clear{
+    clear: both;
+}
+.ltrim-1{
+    margin-left: 10px;
+}
+.ltrim-2{
+    margin-left: 20px;
+}
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
+}
+/***    Other Classes***/
+.hide{
+    display: none;
+}
+.container{
+    margin: 0 auto;
+    width: 1140px;
+}
+/***HEADER***/
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    height: 120px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.header-minifier{
+    height: 47px;
+}
+.logo img{
+    height: 70px;
+    width: auto;
+}
+.menu{
+    margin-top: 10px;
+}
+.menu > ul li{
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    opacity: .85;
+}
+.menu > ul li:hover{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.menu > ul li a::after{
+    content: ' ';
+    width: calc(100% + 16px);
+    height: 3px;
+    margin-top: 9px;
+    margin-left: -8px;
+    background-color: inherit;
+    float: left;
+}
+.menu .active{
+    opacity: 1;
+}
+.menu .active a::after{
+    background-color: white;
+}
+.menu > ul li:first-child{
+    margin: 0;
+}
+/***Main Container***/
+.main-container{
+    margin: 20px auto;
+    width: 1200px;
+    height: 1500px;
+}
+.main-container > div{
+    float: left;
+}
+/*** Sidebar***/
+.sidebar{  
+    background-color: #FAFAFA;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+    height: 500px;
+    padding: 10px;
+    width: 250px;
+}
+.sidebar > .title{
+    color: #263238;
+    font-size: 25px;
+    line-height: 30px;
+}
+.sidebar > hr{
+    opacity: .3;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.sidebar > ul{
+    color: #455A64;
+    padding-left: 5px;
+}
+.sidebar *{
+    line-height: 22px;
+}
+.sidebar .subtitle{
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 19px;
+}
+.sidebar ul li ul > li{
+    margin-left: 20px;
+}
+.sidebar .tag{
+    color: #01579B;
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: bold;
+    opacity: .9;
+}
+.sidebar ul li ul li{
+    font-size: 15px;
+    color: #0288D1;
+}
+.sidebar ul li ul li ul > li{
+    margin-left: 20px;
+    color: #039BE5;
+}
+/***    Content***/
+.content{
+    background-color: #FAFAFA;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 880px;
+    height: 1500px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+/***    Subjects***/
+#mascot img{
+    height: 250px;
+}
+
+/***Footer***/
+.footer::before{
+    background: #455A64;
+    content: " ";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.footer{
+    position: relative;
+    margin-top: 50px;
+    height: 50px;
+    background-color: #FAFAFA;
+}
+.footer span:nth-child(1){
+    font-size: 25px;
+    padding-left: 20px;
+    font-family: monospace;
+    line-height: 50px;
+}
+.footer ul{
+    line-height: 50px;
+    display: inline-block;
+    color: #0288D1;
+    float: right;
+    margin-right: 20px;
+}
+.footer ul > li{
+    display: inline;
+    margin-left: 5px;
+}
