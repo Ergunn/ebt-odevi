@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Html Start</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/lib/styles/monokai-sublime.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/lib/stickyfill.js"></script>
+    <script src="js/lib/highlight.js"></script>
+    <script src="js/lesson.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="bg-body">
+    <div class="header bg-lightblue shadow-light sticky header-minifier">
+        <div class="logo hide">
+           <span class = "hide">HTML start</span>
+            <img src="css/images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Konular</a></li>
+                <li><a href="">Uygulama</a></li>
+                <li class = "active"><a href="">Örnekler</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container">
+        <div id = "sidebar" class="sticky sidebar ">
+            <span class="title"><a href="#logical-tags" onclick="ld.sectionTwo();">Etiketler</a></span>
+            <hr>
+            <ul>
+                <li>
+                    <span class="subtitle" onclick="ld.sectionThree();"><a href="#logical-tags">Mantıksal Etiketler</a></span>
+                    <ul>
+                        <li onclick="ld.sectionFour();"><a href="#title-tag"><span class="tag" >&lt;title&gt;</span> Sayfa Başlığı </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subtitle" onclick="ld.sectionFive();"><a href="#">Biçimsel Etiketler</a></span>
+                    <ul>
+                        <li>
+                            <span onclick="ld.sectionSix();"><a href="#"><span class="tag">&lt;h*&gt;</span>Başlık Etiketleri</a></span>    
+                            <ul>
+                                <li><span class="tag">&lt;h1&gt;</span> </li>
+                                <li><span class="tag">&lt;h2&gt;</span> </li>
+                                <li><span class="tag">&lt;h3&gt;</span> </li>
+                                <li><span class="tag">&lt;h4&gt;</span> </li>
+                                <li><span class="tag">&lt;h5&gt;</span> </li>
+                                <li><span class="tag">&lt;h6&gt;</span> </li>
+                            </ul>
+                        </li>
+                        <li onclick="ld.sectionSeven();"><a href="#"><span class="tag">&lt;p&gt;</span> Paragraf Etiketi</a></li>
+                        <li onclick="ld.sectionEight();"><a href="#"><span class="tag">&lt;br&gt;</span> Alt Satır Etiketi</a></li>
+                        <li onclick="ld.sectionNine();"><a href="#"><span class="tag">&lt;center&gt;</span> Ortalama Etiketi</a></li>
+                        <li onclick="ld.sectionTen();"><a href="#"><span class="tag">&lt;hr&gt;</span> Yatay Çizgi Etiketi</a></li>
+                        <li onclick="ld.sectionEleven();"><a href="#"><span class="tag">&lt;b&gt;</span> Kalın Yazma Etiketi</a></li>
+                        <li onclick="ld.sectionTwelve();"><a href="#"><span class="tag">&lt;i&gt;</span> İtalik Yazma Etiketi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subtitle">İçerik Etiketleri</span>
+                    <ul>
+                        <li><span class="tag">&lt;a&gt;</span> Bağlantı Etiketi</li>
+                        <li><span class="tag">&lt;img&gt;</span> Resim Etiketi</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+               <!-- Buraya Bak :D -->
+					<div class = "sample-container">
+						<span> başlık etiketi</span>
+						<pre><code>
+							&lt;html&gt;
+								&lt;head&gt;
+										&lt;title&gt;sayfa ba&#351;l&#305;&#287;&#305;&lt;/title&gt;
+								&lt;/head&gt;
+							&lt;body&gt;
+
+							&lt;h1&gt;Bilgisayar Donan&#305;mlar&#305; Nelerdir?&lt;/h1&gt;
+
+							&lt;p&gt;Bilgisayar&#305;n elle tutulup g&ouml;zle g&ouml;r&uuml;len
+							 t&uuml;m fiziksel par&ccedil;alar&#305;na Donan&#305;m denir. 
+							Donan&#305;m i&ccedil; donan&#305;m ve d&#305;&#351; donan&#305;m olmak &uuml;zere ikiye ayr&#305;l&#305;r.&lt;/p&gt;
+
+							&lt;h2&gt;&#304;&ccedil; Donan&#305;mlar:&lt;/h2&gt;
+
+							&lt;h3&gt;Anakart:&lt;/h3&gt;
+
+							&lt;p&gt;&Uuml;zerinde slot ve soketlerin bulundu&#287;u di&#287;er
+							 t&uuml;m birimlerin &uuml;zerine tak&#305;ld&#305;&#287;&#305; ve birimler aras&#305;
+							 ileti&#351;imi sa&#287;layan temel kartt&#305;r.&lt;/p&gt;
+
+							&lt;h3&gt;&#304;&#351;lemci:&lt;/h3&gt;
+
+							&lt;p&gt;Bilgisayardaki aritmatiksel ve matematiksel i&#351;lemlerin yap&#305;ld&#305;&#287;&#305; birimdir. &lt;/p&gt;
+
+							&lt;/body&gt;
+							&lt;/html&gt;
+						</pre></code>
+					</div>
+					
+					<div class = "sample-container">
+						<span>paragraf etiketi</span>
+						<pre><code>
+							&lt;html&gt;
+							&lt;head&gt;
+							&lt;title&gt;sayfa ba&#351;l&#305;&#287;&#305;&lt;/title&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+
+							&lt;p&gt;Klavye: Bilgisayarla i&#351;lem yapmak i&ccedil;in gerekli tu&#351;lar&#305;n topland&#305;&#287;&#305; ayg&#305;tt&#305;r.&lt;/p&gt;
+
+							&lt;p&gt;Fare: Kolay, h&#305;zl&#305;        ve zevkli g&ouml;rsel       kullan&#305;ma yarar.
+							 &#304;ki veya &uuml;&ccedil; tu&#351;lu, bir     veya iki d&ouml;nen d&uuml;&#287;meli       ve ayr&#305;ca yanda       d&uuml;&#287;meli yap&#305;l&#305;r.&lt;/p&gt;
+							&lt;/body&gt;
+							&lt;/html&gt;
+							<p>İkinci paragraf kaynak kodda birden fazla boşluk içeriyor ama tarayıcı bunu görmezden gelir.</p>
+						</pre></code>
+					</div>
+									<div class = "sample-container">
+						<span>paragraf etiketi</span>
+						<pre><code>
+							&lt;html&gt;
+							&lt;body&gt;
+
+							&lt;p&gt;
+							    A&ccedil; kald&#305;m, susuz kald&#305;m,
+								Hain, karanl&#305;kt&#305; gece,
+								Can garip, can suskun,
+							    Can parampar&ccedil;a...
+							    Ve ellerim, kelep&ccedil;ede,
+							    T&uuml;t&uuml;ns&uuml;z, uykusuz kald&#305;m,
+							    Terketmedi sevdan beni...
+
+								   Ahmed AR&#304;F
+							&lt;/p&gt;
+							&lt;/body&gt;
+							&lt;/html&gt;
+                         <p>Tarayıcı, biçimlendirmenizi görmezden gelir.</p>							
+						</pre></code>
+					</div>
+						<div class = "sample-container">
+						<span> b, i, u etiketi</span>
+						<pre><code>
+				            &lt;html&gt;
+							&lt;head&gt;
+							&lt;title&gt;sayfa ba&#351;l&#305;&#287;&#305;&lt;/title&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+
+							&lt;p&gt;&lt;u&gt;Bilgisayar&lt;/u&gt;, kendisine verdi&#287;imiz &lt;b&gt;bilgileri&lt;/b&gt; istedi&#287;imizde &lt;b&gt;saklayabilen&lt;/b&gt;, istedi&#287;imizde &lt;i&gt;geri verebilen&lt;/i&gt; cihaza denir.&lt;/p&gt;
+							&lt;/body&gt;
+							&lt;/html&gt;
+                    </pre></code>
+					</div>
+						<div class = "sample-container">
+						<span> br etiketi</span>
+						<pre><code>
+							&lt;html&gt;
+							&lt;head&gt;
+							&lt;title&gt;sayfa ba&#351;l&#305;&#287;&#305;&lt;/title&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+
+							&lt;p&gt;&#304;lk paragraf&lt;/p&gt;
+							&lt;p&gt;Web sitesi, web &uuml;zerindeki sayfalar;&lt;br&gt; metin, g&ouml;rsel ve animasyon &#351;eklinde ziyaret&ccedil;isine bilgi aktaran &lt;br&gt;veya hizmet sunan
+							 sayfalar&#305;n &lt;br&gt;t&uuml;m&uuml;n&uuml; kapsayan bir dok&uuml;man toplulu&#287;udur.&lt;/p&gt;
+
+							&lt;/body&gt;
+							&lt;/html&gt;
+                    </pre></code>
+					</div>
+									<div class = "sample-container">
+						<span> bağlantı etiketi</span>
+						<pre><code>
+							&lt;html&gt;
+							&lt;head&gt;
+							&lt;title&gt;sayfa ba&#351;l&#305;&#287;&#305;&lt;/title&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+							&lt;h3&gt;Siiteye gitmek i&ccedil;in linki t&#305;klay&#305;n&lt;/h3&gt;
+							&lt;p&gt;&lt;a href=&rdquo;http://www.htmldersleri.org&rdquo;&gt;htmldersleri.org&lt;/a&gt;&lt;/p&gt;
+							&lt;/body&gt;
+							&lt;/html&gt;
+                    </pre></code>
+					</div>
+						<div class = "sample-container">
+						<span> resim eklemek</span>
+						<pre><code>
+							&lt;html&gt;
+							&lt;body&gt;
+
+							&lt;p&gt;
+							Bir resim:
+							&lt;img src=&quot;constr4.gif&quot;
+							width=&quot;144&quot; height=&quot;50&quot;&gt;
+							&lt;/p&gt;
+
+							&lt;p&gt;
+							Bir resim:
+							&lt;img src=&quot;hackanm.gif&quot;
+							width=&quot;48&quot; height=&quot;48&quot;&gt;
+							&lt;/p&gt;
+
+							&lt;/body&gt;
+							&lt;/html&gt;
+
+                    </pre></code>
+					</div>
+					
+    <div class="footer">
+        <span>HTML Start</span>
+        <span>Bu site, Eğitim Bilimlerine Giriş dersi final ödevi için hazırlanmıştır</span>
+        <ul>
+            <li>Ahmet Erşin</li>
+            <li>Hatice Ergün</li>
+            <li>Kerem Ermiş</li>
+            <li>Kusi Musah</li>
+        </ul>
+    </div>
+</body>
+</html>
