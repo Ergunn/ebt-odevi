@@ -379,12 +379,12 @@ var lessonData = [
             'hide':false
         },
    'title':'i'
-  },
+      },
     { 'code': 
        {
         'left':250,
         'top':0,
-        'content':'&lt;body&gt;\r\n    &lt;p&gt;normal yaz&#305;l&#305; metin&lt;\/p&gt;\r\n    &lt;p&gt;&lt;i&gt;italik yaz&#305;l&#305; metin&lt;\/i&gt;&lt;\/p&gt;\r\n&lt;\/body&gt;',
+        'content':'&lt;body&gt;&lt;p&gt;&lt;a href=&rdquo;http://www.w3schools.com/html/&rdquo;&gt;buraya t&#305;klay&#305;n&#305;z&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;',
         'hide':false
       },
     'mascot':
@@ -397,20 +397,52 @@ var lessonData = [
         {
             'left':0,
             'top':720,
-            'text':'Bağlantı Etiketi >',
-            'hide':false
+            'text':'İmg Etiketi >',
+            'hide':true
         },
     'bubble':
         {
             'left':220,
             'top':500,
             'text':[
-              '&lt;i&gt; etiketi bir metni e&#287;ik yazmak i&ccedil;in kullan&#305;l&#305;r.'
+              'g&ouml;nderilerimize ba&#287;lant&#305; vermek i&ccedil;in kulland&#305;&#287;&#305;m&#305;z etiketdir.'
             ],
             'hide':false
         },
-   'title':'i'
-  },
+   'title':'a'
+      },    
+    { 'code': 
+       {
+        'left':250,
+        'top':0,
+        'content':'&lt;body&gt;&lt;img src=&rdquo;manzara.jpg&rdquo; alt=&rdquo;Manzara resmi&rdquo; style=&rdquo;width:304px;height:228px;&rdquo;&gt;&lt;/body&gt;',
+        'hide':false
+      },
+    'mascot':
+       {
+            'left':50,
+            'top':500,
+            'hide':false
+       },
+    'button':
+        {
+            'left':0,
+            'top':720,
+            'text':'İmg Etiketi >',
+            'hide':true
+        },
+    'bubble':
+        {
+            'left':220,
+            'top':500,
+            'text':[
+              'img src : ekledi&#287;imiz foto&#287;raf&#305;n adresini giriyoruz.alt : resimin a&ccedil;&#305;klamas&#305;n&#305;yazar&#305;z.style : resmin boyutlar&#305;n&#305; girdi&#287;imizk&#305;s&#305;md&#305;r.width:geni&#351;lik,height:y&uuml;ksekliktir.'
+            ],
+            'hide':false
+        },
+   'title':'img'
+      },    
+
     
 ];
 

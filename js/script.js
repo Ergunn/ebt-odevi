@@ -300,6 +300,8 @@ ld.sectionEleven = function(){
     $(button.selector).unbind('click');
     codeViewer.fontSize(24);
     dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+        button.setText('i Etiketi > >');
     $(button.selector).bind('click',function(){
         ld.sectionTwelve();
     });
@@ -310,7 +312,25 @@ ld.sectionTwelve = function(){
     $(button.selector).unbind('click');
     codeViewer.fontSize(24);
     dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('baglantı Etiketi > >');
+    $(button.selector).bind('click',function(){
+    ld.sectionThirteen();
+    });
 }
+ld.sectionThirteen = function(){
+    li = new dataInterpreter;
+    var data = li.getData(12);
+    $(button.selector).unbind('click');
+    codeViewer.fontSize(20);
+    dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('img Etiketi > >');
+    $(button.selector).bind('click',function(){
+    ld.sectionFourteen();
+    });
+}
+
 
 
 $(document).ready(app.main);
