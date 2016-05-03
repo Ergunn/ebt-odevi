@@ -503,7 +503,7 @@ var lessonData = [
             ],
             'hide':false
         },
-   'title':'tablo'
+   'title':'table'
       },    
         { 'code': 
        {

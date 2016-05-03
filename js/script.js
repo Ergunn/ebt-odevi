@@ -400,7 +400,7 @@ ld.sectionNineteen = function(){
     codeViewer.fontSize(20);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('Bitti');
+    button.setText('Listeleme > >');
     $(button.selector).bind('click',function(){
     ld.sectionTwenty();
     });
@@ -412,7 +412,7 @@ ld.sectionTwenty = function(){
     codeViewer.fontSize(20);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('Bitti');
+    button.setText('Konular Bitti');
     $(button.selector).bind('click',function(){
     ld.sectionTwentyone();
     });     
