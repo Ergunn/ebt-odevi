@@ -367,7 +367,7 @@ var lessonData = [
             'left':0,
             'top':720,
             'text':'Bağlantı Etiketi >',
-            'hide':true
+            'hide':false
         },
     'bubble':
         {
@@ -384,7 +384,7 @@ var lessonData = [
        {
         'left':250,
         'top':0,
-        'content':'&lt;body&gt;&lt;p&gt;&lt;a href=&rdquo;http://www.w3schools.com/html/&rdquo;&gt;buraya t&#305;klay&#305;n&#305;z&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;',
+        'content':'&lt;body&gt;\r\n    &lt;p&gt;&lt;a href=&rdquo;http://www.w3schools.com/html/&rdquo;&gt;buraya t&#305;klay&#305;n&#305;z&lt;/a&gt;&lt;/p&gt;\r\n&lt;/body&gt;',
         'hide':false
       },
     'mascot':
@@ -398,7 +398,7 @@ var lessonData = [
             'left':0,
             'top':720,
             'text':'İmg Etiketi >',
-            'hide':true
+            'hide':false
         },
     'bubble':
         {
@@ -415,7 +415,7 @@ var lessonData = [
        {
         'left':250,
         'top':0,
-        'content':'&lt;body&gt;&lt;img src=&rdquo;manzara.jpg&rdquo; alt=&rdquo;Manzara resmi&rdquo; style=&rdquo;width:304px;height:228px;&rdquo;&gt;&lt;/body&gt;',
+        'content':'&lt;body&gt;\r\n&lt;img src=&rdquo;manzara.jpg&rdquo; alt=&rdquo;Manzara resmi&rdquo; style=&rdquo;width:304px;height:228px;&rdquo;&gt;\r\n&lt;/body&gt;',
         'hide':false
       },
     'mascot':
@@ -428,22 +428,210 @@ var lessonData = [
         {
             'left':0,
             'top':720,
-            'text':'İmg Etiketi >',
-            'hide':true
+            'text':'Stil Yapma >',
+            'hide':false
         },
     'bubble':
         {
             'left':220,
             'top':500,
             'text':[
-              'img src : ekledi&#287;imiz foto&#287;raf&#305;n adresini giriyoruz.alt : resimin a&ccedil;&#305;klamas&#305;n&#305;yazar&#305;z.style : resmin boyutlar&#305;n&#305; girdi&#287;imizk&#305;s&#305;md&#305;r.width:geni&#351;lik,height:y&uuml;ksekliktir.'
+              'img src : foto&#287;raf&#305;n adresi \r\nalt : foto&#287;raf&#305;n a&ccedil;&#305;klamas&#305; \r\nstyle : resmin boyutlar&#305; \r\nwidth:geni&#351;lik   height:y&uuml;ksekliktir.'
             ],
             'hide':false
         },
    'title':'img'
       },    
+    { 'code': 
+       {
+        'left':250,
+        'top':0,
+        'content':'&lt;body&gt;\r\n&lt;h2 style=&rdquo;color:red;&rdquo;&gt;K&#305;rm&#305;z&#305; ba&#351;l&#305;k&lt;/h2&gt;\r\n&lt;h2 style=&rdquo;color:blue;&rdquo;&gt;Mavi ba&#351;l&#305;k&lt;/h2&gt;\r\n&lt;/body&gt;\r\n',
+        'hide':false
+      },
+    'mascot':
+       {
+            'left':50,
+            'top':500,
+            'hide':false
+       },
+    'button':
+        {
+            'left':0,
+            'top':720,
+            'text':'Tablo Yapma >',
+            'hide':false
+        },
+    'bubble':
+        {
+            'left':220,
+            'top':500,
+            'text':[
+              'Ba&#351;l&#305;klar&#305; renklendirdi&#287;imiz stil tan&#305;mlad&#305;k.'
+            ],
+            'hide':false
+        },
+   'title':'style'
+      },    
 
+      { 'code': 
+       {
+        'left':250,
+        'top':0,
+        'content':'&lt;body&gt;\r\n&lt;table border=&rdquo;1&Prime;&gt;\r\n&lt;tr&gt;\r\n&lt;td&gt;1&lt;/td&gt;\r\n&lt;/tr&gt;\r\n&lt;tr&gt;\r\n&lt;td&gt;2&lt;/td&gt;\r\n&lt;td&gt;3&lt;/td&gt;\r\n&lt;/tr&gt;\r\n&lt;/table&gt;\r\n&lt;/body&gt;',
+        'hide':false
+      },
+    'mascot':
+       {
+            'left':50,
+            'top':500,
+            'hide':false
+       },
+    'button':
+        {
+            'left':0,
+            'top':720,
+            'text':'Kayan Yazı >',
+            'hide':false
+        },
+    'bubble':
+        {
+            'left':220,
+            'top':500,
+            'text':[
+              'table border : tablonun kal&#305;nl&#305;&#287;&#305;d&#305;r.\r\n&lt;tr&gt;&lt;/tr&gt; sat&#305;r\r\n&lt;td&gt;&lt;/td&gt; s&uuml;tun\r\neklemek i&ccedil;in kulland&#305;&#287;&#305;m&#305;z komuttur.'
+            ],
+            'hide':false
+        },
+   'title':'tablo'
+      },    
+        { 'code': 
+       {
+        'left':250,
+        'top':0,
+        'content':'&lt;body&gt;\r\n&lt;marquee&gt;\r\nburada yaz&#305;l&#305; olan metin kayan yaz&#305;d&#305;r.\r\n&lt;/marquee&gt;\r\n&lt;/body&gt;\r\n',
+        'hide':false
+      },
+    'mascot':
+       {
+            'left':50,
+            'top':500,
+            'hide':false
+       },
+    'button':
+        {
+            'left':0,
+            'top':720,
+            'text':'Maddelendirme >',
+            'hide':false
+        },
+    'bubble':
+        {
+            'left':220,
+            'top':500,
+            'text':[
+              'Kayan yaz&#305; eklemek i&ccedil;in kulland&#305;&#287;&#305;m&#305;z etiketdir.'
+            ],
+            'hide':false
+        },
+   'title':'marquee'
+      }, 
     
+      { 'code': 
+       {
+        'left':250,
+        'top':0,
+        'content':'&lt;body&gt;\r\n&lt;ul&gt;\r\n&lt;li&gt;Kahve&lt;/li&gt;\r\n&lt;li&gt;&Ccedil;ay&lt;/li&gt;\r\n&lt;li&gt;S&uuml;t&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;/body&gt;',
+        'hide':false
+      },
+    'mascot':
+       {
+            'left':50,
+            'top':500,
+            'hide':false
+       },
+    'button':
+        {
+            'left':0,
+            'top':720,
+            'text':'Numaralandırma >',
+            'hide':false
+        },
+    'bubble':
+        {
+            'left':220,
+            'top':500,
+            'text':[
+              '&lt;ul&gt;&lt;/ul&gt; etiketiyle maddelendirme komutunu a&ccedil;ar&#305;z.\r\n&lt;li&gt;&lt;/li&gt; etiketiyle maddeleri yazar&#305;z.'
+            ],
+            'hide':false
+        },
+   'title':'ul'
+      },
+        
+      { 'code': 
+       {
+        'left':250,
+        'top':0,
+        'content':'&lt;body&gt;\r\n&lt;ol&gt;\r\n&lt;li&gt;Kahve&lt;/li&gt;\r\n&lt;li&gt;&Ccedil;ay&lt;/li&gt;\r\n&lt;li&gt;S&uuml;t&lt;/li&gt;\r\n&lt;/ol&gt;\r\n&lt;/body&gt;',
+        'hide':false
+      },
+    'mascot':
+       {
+            'left':50,
+            'top':500,
+            'hide':false
+       },
+    'button':
+        {
+            'left':0,
+            'top':720,
+            'text':'Listeleme >',
+            'hide':false
+        },
+    'bubble':
+        {
+            'left':220,
+            'top':500,
+            'text':[
+              '&lt;ol&gt;&lt;/ol&gt; etiketi numaraland&#305;rma yapmam&#305;z&#305; sa&#287;lar.\r\n&lt;li&gt;&lt;/li&gt; etiketiyle listemizi olu&#351;tururuz.'
+            ],
+            'hide':false
+        },
+   'title':'ol'
+      }, 
+            
+      { 'code': 
+       {
+        'left':250,
+        'top':0,
+        'content':'&lt;body&gt;\r\n&lt;ul style=&rdquo;list-style-type:circle&rdquo;&gt;\r\n&lt;li&gt;Kahve&lt;/li&gt;\r\n&lt;li&gt;&Ccedil;ay&lt;/li&gt;\r\n&lt;li&gt;S&uuml;t&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;/body&gt;',
+        'hide':false
+      },
+    'mascot':
+       {
+            'left':50,
+            'top':500,
+            'hide':false
+       },
+    'button':
+        {
+            'left':0,
+            'top':720,
+            'text':'Bitti >',
+            'hide':false
+        },
+    'bubble':
+        {
+            'left':220,
+            'top':500,
+            'text':[
+              '&lt;ul style=&rdquo;list-style-type:disc&rdquo;&gt; liste tipini dairesel olarak belirttik.\r\ntype:square&gt;&gt;kare  type:none&gt;&gt;hi&ccedil;bir i&#351;aret olmadan liste yapar.'
+            ],
+            'hide':false
+        },
+   'title':'ul'
+      },  
 ];
 
 

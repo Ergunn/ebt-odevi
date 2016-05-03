@@ -313,7 +313,7 @@ ld.sectionTwelve = function(){
     codeViewer.fontSize(24);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('baglantı Etiketi > >');
+    button.setText('Bağlantı Etiketi > >');
     $(button.selector).bind('click',function(){
     ld.sectionThirteen();
     });
@@ -330,7 +330,93 @@ ld.sectionThirteen = function(){
     ld.sectionFourteen();
     });
 }
-
+ld.sectionFourteen = function(){
+    li = new dataInterpreter;
+    var data = li.getData(13);
+    $(button.selector).unbind('click');
+    codeViewer.fontSize(20);
+    dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('Stil Tanımlama > >');
+    $(button.selector).bind('click',function(){
+    ld.sectionFifteen();
+    });
+ }
+ld.sectionFifteen = function(){
+    li = new dataInterpreter;
+    var data = li.getData(14);
+    $(button.selector).unbind('click');
+    codeViewer.fontSize(20);
+    dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('Tablo Yapma > >');
+    $(button.selector).bind('click',function(){
+    ld.sectionSixteen();
+    });
+     
+  }
+ld.sectionSixteen = function(){
+    li = new dataInterpreter;
+    var data = li.getData(15);
+    $(button.selector).unbind('click');
+    codeViewer.fontSize(20);
+    dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('Kayan Yazı Etiketi > >');
+    $(button.selector).bind('click',function(){
+    ld.sectionSeventeen();
+    });
+    
+      }
+ld.sectionSeventeen = function(){
+    li = new dataInterpreter;
+    var data = li.getData(16);
+    $(button.selector).unbind('click');
+    codeViewer.fontSize(20);
+    dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('Maddelendirme  > >');
+    $(button.selector).bind('click',function(){
+    ld.sectionEightteen();
+    });
+      }
+ld.sectionEightteen = function(){
+    li = new dataInterpreter;
+    var data = li.getData(17);
+    $(button.selector).unbind('click');
+    codeViewer.fontSize(20);
+    dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('Numaralandırma > >');
+    $(button.selector).bind('click',function(){
+    ld.sectionNineteen();
+    });
+  
+ }
+ld.sectionNineteen = function(){
+    li = new dataInterpreter;
+    var data = li.getData(18);
+    $(button.selector).unbind('click');
+    codeViewer.fontSize(20);
+    dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('Bitti');
+    $(button.selector).bind('click',function(){
+    ld.sectionTwenty();
+    });
+ }
+ld.sectionTwenty = function(){
+    li = new dataInterpreter;
+    var data = li.getData(19);
+    $(button.selector).unbind('click');
+    codeViewer.fontSize(20);
+    dataAppender.setData(data);
+    conversation.changeText(data.bubble.text[1]);
+    button.setText('Bitti');
+    $(button.selector).bind('click',function(){
+    ld.sectionTwentyone();
+    });     
+}
 
 
 $(document).ready(app.main);

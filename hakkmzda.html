@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Html Start</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/lib/styles/monokai-sublime.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/lib/stickyfill.js"></script>
+    <script src="js/lib/highlight.js"></script>
+    <script src="js/lesson.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="bg-body">
+    <div class="header bg-lightblue shadow-light sticky header-minifier">
+        <div class="logo hide">
+           <span class = "hide">HTML start</span>
+            <img src="css/images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="index.html">Konular</a></li>
+                <li><a href="ornek.html">Örnekler</a></li>
+                <li><a href="iletisim.html">İletisim</a></li>
+                <li><a href="hakkmzda.html">Hakkımızda</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="main-container">
+        <div id = "sidebar" class="sticky sidebar ">
+            <span class="title"><a href="#logical-tags" onclick="ld.sectionTwo();">Etiketler</a></span>
+            <hr>
+            <ul>
+                <li>
+                    <span class="subtitle" onclick="ld.sectionThree();"><a href="#logical-tags">Mantıksal Etiketler</a></span>
+                    <ul>
+                        <li onclick="ld.sectionFour();"><a href="#title-tag"><span class="tag" >&lt;title&gt;</span> Sayfa Başlığı </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subtitle" onclick="ld.sectionFive();"><a href="#">Biçimsel Etiketler</a></span>
+                    <ul>
+                        <li>
+                            <span onclick="ld.sectionSix();"><a href="#"><span class="tag">&lt;h*&gt;</span>Başlık Etiketleri</a></span>    
+                            <ul>
+                                <li><span class="tag">&lt;h1&gt;</span> </li>
+                                <li><span class="tag">&lt;h2&gt;</span> </li>
+                                <li><span class="tag">&lt;h3&gt;</span> </li>
+                                <li><span class="tag">&lt;h4&gt;</span> </li>
+                                <li><span class="tag">&lt;h5&gt;</span> </li>
+                                <li><span class="tag">&lt;h6&gt;</span> </li>
+                            </ul>
+                        </li>
+                        <li onclick="ld.sectionSeven();"><a href="#"><span class="tag">&lt;p&gt;</span> Paragraf Etiketi</a></li>
+                        <li onclick="ld.sectionEight();"><a href="#"><span class="tag">&lt;br&gt;</span> Alt Satır Etiketi</a></li>
+                        <li onclick="ld.sectionNine();"><a href="#"><span class="tag">&lt;center&gt;</span> Ortalama Etiketi</a></li>
+                        <li onclick="ld.sectionTen();"><a href="#"><span class="tag">&lt;hr&gt;</span> Yatay Çizgi Etiketi</a></li>
+                        <li onclick="ld.sectionEleven();"><a href="#"><span class="tag">&lt;b&gt;</span> Kalın Yazma Etiketi</a></li>
+                        <li onclick="ld.sectionTwelve();"><a href="#"><span class="tag">&lt;i&gt;</span> İtalik Yazma Etiketi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subtitle">İçerik Etiketleri</span>
+                    <ul>
+                        <li><span class="tag">&lt;a&gt;</span> Bağlantı Etiketi</li>
+                        <li><span class="tag">&lt;img&gt;</span> Resim Etiketi</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+          <div class="content" style="height:3000px;">
+       		<div id="title-tag" class = "sample-container">
+				<span>Bu web sitesinin amacı:</span>
+                <p>6,7 ve 8.sınıf öğrencilere web tasarım alanında farkındalık kazandırmak.
+Web tasarımı ile ilgili merak ve motivasyon oluşturmak.
+Öğrencilere HTML temel etiketlerini öğretmek ve kullanabilir hale getirmek.
+                    Öğrencileri HTML ile basit web sayfaları hazırlayabilir hâle getirmek.</p>
+            
+                </div></div>
+        
+    <div class="footer">
+        <span>HTML Start</span>
+        <span>Bu site, Eğitimde Bilgisayar Teknolojileri dersi final ödevi için hazırlanmıştır</span>
+        <ul>
+            <li>Ahmet Erşin</li>
+            <li>Hatice Ergün</li>
+            <li>Kerem Ermiş</li>
+            <li>Kusi Musah</li>
+        </ul>
+        </div></div>
+        <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
