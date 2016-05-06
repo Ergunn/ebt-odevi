@@ -442,37 +442,6 @@ var lessonData = [
         },
    'title':'img'
       },    
-    { 'code': 
-       {
-        'left':250,
-        'top':0,
-        'content':'&lt;body&gt;\r\n&lt;h2 style=&rdquo;color:red;&rdquo;&gt;K&#305;rm&#305;z&#305; ba&#351;l&#305;k&lt;/h2&gt;\r\n&lt;h2 style=&rdquo;color:blue;&rdquo;&gt;Mavi ba&#351;l&#305;k&lt;/h2&gt;\r\n&lt;/body&gt;\r\n',
-        'hide':false
-      },
-    'mascot':
-       {
-            'left':50,
-            'top':500,
-            'hide':false
-       },
-    'button':
-        {
-            'left':0,
-            'top':720,
-            'text':'Tablo Yapma >',
-            'hide':false
-        },
-    'bubble':
-        {
-            'left':220,
-            'top':500,
-            'text':[
-              'Ba&#351;l&#305;klar&#305; renklendirdi&#287;imiz stil tan&#305;mlad&#305;k.'
-            ],
-            'hide':false
-        },
-   'title':'style'
-      },    
 
       { 'code': 
        {

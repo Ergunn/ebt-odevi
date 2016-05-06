@@ -337,7 +337,7 @@ ld.sectionFourteen = function(){
     codeViewer.fontSize(20);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('Stil Tanımlama > >');
+    button.setText('Tablo Yapma > >');
     $(button.selector).bind('click',function(){
     ld.sectionFifteen();
     });
@@ -349,7 +349,7 @@ ld.sectionFifteen = function(){
     codeViewer.fontSize(20);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('Tablo Yapma > >');
+    button.setText('Kayan Yazı Etiketi > >');
     $(button.selector).bind('click',function(){
     ld.sectionSixteen();
     });
@@ -362,7 +362,7 @@ ld.sectionSixteen = function(){
     codeViewer.fontSize(20);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('Kayan Yazı Etiketi > >');
+    button.setText('Maddelendirme > >');
     $(button.selector).bind('click',function(){
     ld.sectionSeventeen();
     });
@@ -375,7 +375,7 @@ ld.sectionSeventeen = function(){
     codeViewer.fontSize(20);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('Maddelendirme  > >');
+    button.setText('Numaralandırma   > >');
     $(button.selector).bind('click',function(){
     ld.sectionEightteen();
     });
@@ -387,7 +387,7 @@ ld.sectionEightteen = function(){
     codeViewer.fontSize(20);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('Numaralandırma > >');
+    button.setText('Listeleme > >');
     $(button.selector).bind('click',function(){
     ld.sectionNineteen();
     });
@@ -400,22 +400,10 @@ ld.sectionNineteen = function(){
     codeViewer.fontSize(20);
     dataAppender.setData(data);
     conversation.changeText(data.bubble.text[1]);
-    button.setText('Listeleme > >');
+    button.setText('Konular Bitti');
     $(button.selector).bind('click',function(){
     ld.sectionTwenty();
     });
- }
-ld.sectionTwenty = function(){
-    li = new dataInterpreter;
-    var data = li.getData(19);
-    $(button.selector).unbind('click');
-    codeViewer.fontSize(20);
-    dataAppender.setData(data);
-    conversation.changeText(data.bubble.text[1]);
-    button.setText('Konular Bitti');
-    $(button.selector).bind('click',function(){
-    ld.sectionTwentyone();
-    });     
 }
 
 

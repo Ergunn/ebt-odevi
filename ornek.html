@@ -62,6 +62,11 @@
                     <ul>
                         <li><span class="tag">&lt;a&gt;</span><a href="#link-tag"> Bağlantı Etiketi</a></li>
                         <li><span class="tag">&lt;img&gt;</span><a href="#img-tag"> Resim Etiketi</a></li>
+                        <li><span class="tag">&lt;table&gt;</span><a href="#tablo-tag">Tablo Etiketi</a></li>
+                        <li><span class="tag">&lt;marquee&gt;</span><a href="#kayan-tag"> Kayan Yazı</a></li>
+                        <li><span class="tag">&lt;ul&gt;</span><a href="#madde-tag"> Maddelendirme </a></li>
+                        <li><span class="tag">&lt;ol&gt;</span><a href="#numara-tag"> Numaralandırma </a></li>
+                        <li><span class="tag">&lt;ul&gt;</span><a href="#liste-tag"> Listeleme</a></li>
                     </ul>
                 </li>
             </ul>
@@ -212,9 +217,105 @@
 &lt;/html&gt;
                     </pre></code>
 					</div>
-            </div>
-        </div>
-    </div>
+      <div id="tablo-tag" class = "sample-container">
+						<span> Tablo Etiketi </span>
+						<pre><code>
+&lt;html&gt;
+&lt;head&gt;
+      &lt;title&gt;sayfa ba&#351;l&#305;&#287;&#305;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;table border=&rdquo;2&Prime;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Ay&lt;/th&gt;
+    &lt;th&gt;G&uuml;n Say&#305;s&#305;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Mart&lt;/td&gt;
+    &lt;td&gt;31&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Nisan&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre></code>
+					</div>
+        
+						<div id="kayan-tag" class = "sample-container">
+						<span> Kayan Yazı Etiketi</span>
+						<pre><code>
+&lt;html&gt;
+    &lt;head&gt;
+            &lt;title&gt;sayfa ba&#351;l&#305;&#287;&#305;&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;marquee&gt; Kuyruklu Y&#305;ld&#305;z Geliyor! &lt;/marquee&gt;
+    &lt;/body&gt;
+&lt;/html&gt;		
+
+                    </pre></code>
+					</div>
+        <div id="madde-tag" class = "sample-container">
+						<span> Maddelendirme Etiketi</span>
+						<pre><code>
+&lt;html&gt;
+&lt;body&gt;
+&lt;h3&gt;disk liste&lt;/h3&gt;
+&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;Elma&lt;/li&gt;&lt;li&gt;Armut&lt;/li&gt;&lt;li&gt;Kavun&lt;/li&gt;&lt;li&gt;Karpuz&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;daire liste&lt;/h3&gt;
+&lt;ul type=&quot;circle&quot;&gt; &lt;li&gt;Elma&lt;/li&gt;&lt;li&gt;Armut&lt;/li&gt;&lt;li&gt;Kavun&lt;/li&gt;&lt;li&gt;Karpuz&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;kare liste&lt;/h3&gt;
+&lt;ul type=&quot;square&quot;&gt; &lt;li&gt;Elma&lt;/li&gt;&lt;li&gt;Armut&lt;/li&gt;&lt;li&gt;Kavun&lt;/li&gt;&lt;li&gt;Karpuz&lt;/li&gt;&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/hmtl&gt;
+
+                    </pre></code>
+					</div>
+             <div id="numara-tag" class = "sample-container">
+						<span> Numaralandırma Etiketi</span>
+						<pre><code>
+&lt;html&gt;
+&lt;body&gt;
+&lt;h3&gt;numarali liste&lt;/h3&gt;
+&lt;ol&gt;&lt;li&gt;Elma&lt;/li&gt;&lt;li&gt;Armut&lt;/li&gt;&lt;li&gt;Kavun&lt;/li&gt;&lt;li&gt;Karpuz&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h3&gt;harfli liste&lt;/h3&gt;
+&lt;ol type=&quot;A&quot;&gt; &lt;li&gt;Elma&lt;/li&gt;&lt;li&gt;Armut&lt;/li&gt;&lt;li&gt;Kavun&lt;/li&gt;&lt;li&gt;Karpuz&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h3&gt;kucuk harfli liste&lt;/h3&gt;
+&lt;ol type=&quot;a&quot;&gt; &lt;li&gt;Elma&lt;/li&gt;&lt;li&gt;Armut&lt;/li&gt;&lt;li&gt;Kavun&lt;/li&gt;&lt;li&gt;Karpuz&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h3&gt;roma rakaml&#305; liste&lt;/h3&gt;
+&lt;ol type=&quot;I&quot;&gt; &lt;li&gt;Elma&lt;/li&gt;&lt;li&gt;Armut&lt;/li&gt;&lt;li&gt;Kavun&lt;/li&gt;&lt;li&gt;Karpuz&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h3&gt;kucuk roma rakamli liste&lt;/h3&gt;
+&lt;ol type=&quot;i&quot;&gt; &lt;li&gt;Elma&lt;/li&gt;&lt;li&gt;Armut&lt;/li&gt;&lt;li&gt;Kavun&lt;/li&gt;&lt;li&gt;Karpuz&lt;/li&gt;&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/hmtl&gt;
+                    </pre></code>
+					</div>
+            <div id="liste-tag" class = "sample-container">
+						<span> İç içe Listeleme</span>
+						<pre><code>
+&lt;html&gt;
+&lt;body&gt;
+&lt;h3&gt;ic ice listeler 2&lt;/h3&gt;
+&lt;ul type=&quot;disc&quot;&gt;&lt;li&gt;Kahve&lt;ul type=&quot;square&quot;&gt;&lt;li&gt;turk kahvesi&lt;/li&gt;&lt;li&gt;neskafe&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;ul type=&quot;square&quot;&gt;&lt;li&gt;siyah cay&lt;/li&gt;&lt;li&gt;kacak cay&lt;/li&gt;&lt;li&gt;yesil cay&lt;ul type=&quot;circle&quot;&gt;&lt;li&gt;Cin&lt;/li&gt;&lt;li&gt;Afrika&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;sut&lt;/li&gt;&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/hmtl&gt;	
+
+                    </pre></code>
+					</div>
+            
+        </div></div> </div>                       
     <div class="footer">
         <span>HTML Start</span>
         <span>Bu site, Eğitimde Bilgisayar Teknolojileri dersi final ödevi için hazırlanmıştır</span>
