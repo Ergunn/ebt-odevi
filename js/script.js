@@ -406,5 +406,4 @@ ld.sectionNineteen = function(){
     });
 }
 
-
 $(document).ready(app.main);

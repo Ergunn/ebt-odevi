@@ -428,7 +428,7 @@ var lessonData = [
         {
             'left':0,
             'top':720,
-            'text':'Stil Yapma >',
+            'text':'İmg Etiketi >',
             'hide':false
         },
     'bubble':

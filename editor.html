@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Html Start</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/lib/styles/monokai-sublime.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/lib/stickyfill.js"></script>
+    <script src="js/lib/highlight.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $('#odevle-hic-ugrasim-kalmamis').click(function(){
+                $('#code-viewer').contents().find('html').html($('#tb').val());
+            });
+        });
+    </script>
+</head>
+<body class="bg-body">
+    <div class="header bg-lightblue shadow-light sticky">
+        <div class="logo">
+           <span class = "hide">HTML start</span>
+            <img src="css/images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Konular</a></li>
+                <li><a href="ornek.html">Örnekler</a></li>
+                <li class="active"><a href="editor.html">Editör</a></li>
+                <li><a href="iletisim.html">İletisim</a></li>
+                <li><a href="hakkmzda.html">Hakkımızda</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="editor-container">
+      <div class="left-wrapper">
+           <div class="code-wrapper">
+               <textarea name="" id="tb" cols="30" rows="10"></textarea>
+               <button id="odevle-hic-ugrasim-kalmamis">Çalıştır</button>
+           </div>
+           <div class="hint">
+              <h2>Görevler</h2><br>
+              <hr>
+               <ol type="1">
+                   <li>İsmini başlık etiketlerini kullanarak büyükten küçüğe doğru sırala.</li>
+                   <li>Bir paragraf metni yaz ve alt satıra geçmek için gerekli etiketi kullan.</li>
+                   <li>"<b>Adalet</b> <i>mülkün</i><u> temelidir.</u>"  Bu yazıyı ekrana yazdır.</li>
+                   <li>htmldersleri.org Sayfasına bağlantı etiketi kullan.</li>
+                   <li>En sevdiğin resmi ekrana ekle.</li>
+                   <li>Ders programını tablo yap.</li>
+                   <li>Ekrana ismini kayan yazı olarak ekle.</li>
+                   <li>En sevdiğin yemekleri listele.</li> </ol>
+                  <h2>Görevler2</h2><br>
+                   <hr>
+                   <ol type="1">
+                   <li>Bir kayan yazı ekle.Yazı kalın-eğik-altı çizili olsun.</li> 
+                  <li>Çiçekler adında bir başlık oluştur ve 4 çiçek resmini tablo içine yerleştir.</li>
+                   <li>Bir oyun listesi oluştur ve her bir oyun için oyun sitesine bağlantı yap.</li>
+ 
+               </ol>
+           </div>
+       </div>
+        <iframe id="code-viewer" class="content">
+           
+        </iframe>
+    </div>
+    <div class="footer">
+        <span>HTML Start</span>
+        <span>Bu site, Eğitimde Bilgisayar Teknolojileri dersi final ödevi için hazırlanmıştır</span>
+        <ul>
+            <li>Ahmet Erşin</li>
+            <li>Hatice Ergün</li>
+            <li>Kerem Ermiş</li>
+            <li>Kusi Musah</li>
+        </ul>
+    </div>
+</body>
+</html>
